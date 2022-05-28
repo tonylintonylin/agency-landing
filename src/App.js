@@ -1,5 +1,5 @@
 function App() {
-  return <div className="App">Template</div>;
+  return <div className="App">Templates</div>;
 }
 
 export default App;
