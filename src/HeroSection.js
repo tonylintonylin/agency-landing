@@ -1,5 +1,5 @@
 function HeroSection() {
-  return <h1>hero</h1>;
+  return <div className="hero-section">Home</div>;
 }
 
 export default HeroSection;

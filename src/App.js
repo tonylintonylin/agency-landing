@@ -1,6 +1,7 @@
 import HeroSection from "./HeroSection";
 import ServicesSection from "./ServicesSection";
 import FooterSection from "./FooterSection";
+import "./styles.css";
 
 function App() {
   return (
