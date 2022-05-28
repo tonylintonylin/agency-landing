@@ -4,12 +4,6 @@ body {
   margin: 0;
 }
 
-.App {
-  font-family: Poppins;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 nav {
   display: flex;
   font-size: 13px;
@@ -17,15 +11,42 @@ nav {
   padding: 10px;
 }
 
-nav p {
-  padding: 0 10px;
-  font-size: 13px;
-  color: white;
+input[type="text"] {
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  width: 40%;
+  padding: 5px 0;
+  margin: 20px auto;
+  display: block;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="submit"] {
+  color: #806c6c;
+  border-radius: 0;
+  border: none;
+  padding: 5px 10px;
+}
+
+nav > p {
+  margin: 0 10px;
+}
+
+.App {
+  font-family: Poppins;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .hero-section {
   height: 600px;
-  background: url(https://assets.codepen.io/6060109/agency-hero-image.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://assets.codepen.io/6060109/agency-hero-image.png);
   background-size: cover;
   color: white;
 }
@@ -35,4 +56,69 @@ nav p {
   left: 50%;
   transform: translateX(-50%);
   top: 20%;
+}
+
+.services-section {
+  height: 400px;
+}
+
+.services-section > h2 {
+  color: #133588;
+}
+
+.services-section > div {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.service-block {
+  width: 30%;
+  color: #806c6c;
+}
+
+.service-block > img {
+  width: 100%;
+}
+
+.service-block > p {
+  margin: 0;
+  text-align: left;
+  font-size: 12px;
+}
+
+.footer-section {
+  height: 400px;
+  background: #133588;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.footer-section > h2 {
+  color: white;
+  width: 50%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 400px) {
+  .services-section {
+    height: auto;
+  }
+  .services-section > div {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .service-block {
+    width: 70%;
+    padding: 20px 0;
+  }
+
+  input[type="text"] {
+    width: 80%;
+  }
+
+  .footer-section {
+    height: 300px;
+  }
 }

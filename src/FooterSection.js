@@ -1,5 +1,13 @@
 function FooterSection() {
-  return <h1>footer</h1>;
+  return (
+    <div className="footer-section">
+      <h2>Subscribe to our Email List</h2>
+      <form>
+        <input type="text" placeholder="Whats your email" />
+        <input type="submit" />
+      </form>
+    </div>
+  );
 }
 
 export default FooterSection;

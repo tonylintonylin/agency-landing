@@ -6,7 +6,7 @@ function HeroSection() {
         <p>Our Services</p>
         <p>Subscribe</p>
       </nav>
-      <h2>We do Websites Right</h2>
+      <h2>We do websites right</h2>
     </div>
   );
 }
