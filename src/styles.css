@@ -1,3 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: Poppins;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav p {
+  padding: 0 10px;
+  font-size: 13px;
+  color: white;
+}
+
 .hero-section {
-  background-color: blue;
+  height: 600px;
+  background: url(https://assets.codepen.io/6060109/agency-hero-image.png);
+  background-size: cover;
+  color: white;
+}
+
+.hero-section > h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
 }
